@@ -15,6 +15,11 @@ class LoginUserTest extends TestCase
      */
     public function test_login_valid_user_credential()
     {
+        $response = $this->post('/api/register', [
+            'email' => 'backend@multisyscorp.com',
+            'password' => 'test123'
+        ]);
+
         $response = $this->post('/api/login', [
             'email' => 'backend@multisyscorp.com',
             'password' => 'test123'
