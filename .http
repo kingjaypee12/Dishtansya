@@ -1,0 +1,27 @@
+### User Register
+Post http://127.0.0.1:8000/api/register
+content-type: application/json
+
+{
+  "email": "backend@multisyscorp.com",
+  "password": "test123"
+}
+
+### User Login
+Post http://127.0.0.1:8000/api/login
+content-type: application/json
+
+{
+  "email": "backend@multisyscorp.com",
+  "password": "test123"
+}
+
+### Place Order
+Post http://127.0.0.1:8000/api/orders
+Authorization: Bearer Jb9YoWR1fdPsljYSoWWenWGCVPW8vNjGNDuv3eDX
+content-type: application/json
+
+{
+  "product_id": 1,
+  "quantity": 5
+}
